@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyVault Drive - Advanced Cloud Infrastructure</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        google: {
+                            blue: '#1a73e8',
+                            red: '#ea4335',
+                            yellow: '#fbbc04',
+                            green: '#34a853',
+                            gray: '#5f6368',
+                            surface: '#f8f9fa'
+                        },
+                        primary: '#1a73e8',
+                        secondary: '#5f6368',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Roboto', 'system-ui', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #dadce0;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #bdc1c6;
+        }
+
+        .dark ::-webkit-scrollbar-thumb {
+            background: #3c4043;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .drive-shadow {
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+        }
+
+        .active-nav {
+            background-color: #e8f0fe;
+            color: #1967d2;
+        }
+
+        .dark .active-nav {
+            background-color: rgba(26, 115, 232, 0.1);
+            color: #8ab4f8;
+        }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "axios": "https://esm.sh/axios@^1.13.5",
+    "jszip": "https://esm.sh/jszip@3.10.1"
+  }
+}
+</script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-google-surface text-[#3c4043] transition-colors duration-200 dark:bg-[#131314] dark:text-[#e3e3e3]">
+    <div id="root"></div>
+    <script type="module" src="./src/Main.jsx"></script>
+</body>
+
+</html>

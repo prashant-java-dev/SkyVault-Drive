@@ -1,0 +1,8 @@
+{
+  "name": "SkyVault Drive",
+  "description": "Enterprise-grade cloud infrastructure with metallic glass UI, rich file telemetry, and high-fidelity synchronization protocols.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
